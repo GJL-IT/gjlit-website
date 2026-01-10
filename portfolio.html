@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Portfolio & Case Studies - AI Automation Solutions | GJL.IT</title>
+    <meta name="title" content="Portfolio & Case Studies - AI Automation Solutions | GJL.IT">
+    <meta name="description" content="Real automation projects that delivered results: franchise management systems, smart scheduling, and workflow automation for UK businesses. See how we've helped save time and reduce costs.">
+    <meta name="keywords" content="automation portfolio, case studies, workflow automation examples, business automation results, AI automation projects UK">
+    <meta name="author" content="Jacob Litwin">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gjl.it/portfolio.html">
+    <meta property="og:title" content="Portfolio & Case Studies - AI Automation Solutions | GJL.IT">
+    <meta property="og:description" content="Real automation projects that delivered results for UK businesses. See case studies and examples of workflow automation success.">
+    <meta property="og:image" content="https://gjl.it/GJLIT_Logo_and_Text.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gjl.it/portfolio.html">
+    <meta property="twitter:title" content="Portfolio & Case Studies - AI Automation Solutions | GJL.IT">
+    <meta property="twitter:description" content="Real automation projects that delivered results for UK businesses. See case studies and workflow automation examples.">
+    <meta property="twitter:image" content="https://gjl.it/GJLIT_Logo_and_Text.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gjl.it/portfolio.html">
+
+    <!-- Structured Data - CollectionPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Portfolio & Case Studies",
+      "description": "Real automation projects and case studies showcasing workflow automation solutions for small businesses",
+      "url": "https://gjl.it/portfolio.html",
+      "about": {
+        "@type": "Service",
+        "serviceType": "Workflow Automation",
+        "provider": {
+          "@type": "ProfessionalService",
+          "name": "GJL.IT",
+          "url": "https://gjl.it"
+        }
+      }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+
+        .main-nav {
+            background: rgba(42, 42, 42, 0.95);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: nowrap;
+        }
+
+        .nav-menu a {
+            color: #e5e7eb;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 25px;
+            transition: all 0.3s;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .nav-menu a:hover {
+            color: #ffa500;
+            background: rgba(255, 165, 0, 0.1);
+        }
+
+        .nav-menu a.active {
+            background: linear-gradient(135deg, #ff8c00 0%, #ffa500 100%);
+            color: #1a1a1a;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 30px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            white-space: nowrap;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nav-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff8c00 0%, #ffa500 100%);
+            color: #1a1a1a;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 140, 0, 0.4);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 20px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+            scroll-margin-top: 70px;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background-image: url('circuit-pattern.png');
+            background-size: 400px 400px;
+            background-repeat: repeat;
+            pointer-events: none;
+        }
+
+        .section .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+
+        .section-intro {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .case-studies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .case-study {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .case-study:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .case-tag {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffe8cc 0%, #fff5e6 100%);
+            color: #ff8c00;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .case-study h3 {
+            font-size: 1.8rem;
+            color: #ff751f;
+            margin-bottom: 15px;
+        }
+
+        .case-problem {
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ff8c00;
+        }
+
+        .case-problem h4 {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .case-problem p {
+            color: #333;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .case-solution h4 {
+            font-size: 1.1rem;
+            color: #2d3748;
+            margin-bottom: 15px;
+        }
+
+        .case-solution ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .case-solution li {
+            padding-left: 30px;
+            margin-bottom: 10px;
+            position: relative;
+            color: #666;
+        }
+
+        .case-solution li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #ff8c00;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .results {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .results h4 {
+            color: #ffa500;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ff8c00;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: #ccc;
+            margin-top: 5px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech-badge {
+            background: #f0f0f0;
+            color: #666;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid #ddd;
+        }
+
+        .process-section {
+            background: #f7fafc;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ff8c00 0%, #ffa500 100%);
+            color: #1a1a1a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: #2d3748;
+        }
+
+        .step p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff8c00 0%, #ffa500 100%);
+            color: #1a1a1a;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(255, 140, 0, 0.4);
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        footer p {
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+                white-space: normal;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .case-studies {
+                grid-template-columns: 1fr;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                gap: 15px;
+            }
+
+            .nav-menu a {
+                font-size: 0.85rem;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <img src="logo.png" alt="GJL.IT Logo" class="logo">
+            <h1>Real Automation Projects That Delivered Results</h1>
+            <p>See how we've helped businesses streamline operations, save time, and scale efficiently with AI-powered automation</p>
+        </div>
+    </section>
+
+    <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="index.html#services">Services I Offer</a>
+                <a href="index.html#benefits">Why AI?</a>
+                <a href="index.html#process">How I Work</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <h2>Case Studies</h2>
+            <p class="section-intro"><strong style="font-size: 1.3rem; color: #ff8c00; font-weight: 700;">From franchise systems to smart scheduling, here are real-world examples of automation solutions we've built for growing businesses.</strong></p>
+
+            <div class="case-studies">
+                <!-- Case Study 1: O1Inventories -->
+                <div class="case-study">
+                    <span class="case-tag">Franchise Management</span>
+                    <h3>O1Inventories</h3>
+                    
+                    <div class="case-problem">
+                        <h4>The Challenge</h4>
+                        <p>A London-based property inventory franchise needed a centralized system to manage bookings across multiple franchisees, letting agents, clerks, and typists—all with different permission levels and workflows.</p>
+                    </div>
+
+                    <div class="case-solution">
+                        <h4>The Solution</h4>
+                        <ul>
+                            <li>Designed multi-workspace Monday.com architecture for central intake and distribution</li>
+                            <li>Created Bookings Distribution Hub for automated franchise allocation</li>
+                            <li>Implemented separate workspaces for HQ, franchisees, clerks, and invoicing teams</li>
+                            <li>Built clear permission structure between owners, agents, tenants, and branches</li>
+                        </ul>
+                    </div>
+
+                    <div class="results">
+                        <h4>Results</h4>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Centralized bookings</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">5+</span>
+                                <span class="metric-label">Workspaces integrated</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">0</span>
+                                <span class="metric-label">Manual routing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-badge">Monday.com Work OS</span>
+                        <span class="tech-badge">Cognito Forms</span>
+                        <span class="tech-badge">Multi-workspace design</span>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: Lawn Turf -->
+                <div class="case-study">
+                    <span class="case-tag">Smart Scheduling</span>
+                    <h3>Lawn Turf Laying Co.</h3>
+                    
+                    <div class="case-problem">
+                        <h4>The Challenge</h4>
+                        <p>Manual scheduling of turf installation jobs across two teams led to double-bookings, unbalanced workloads, and 8+ hours per week spent on admin work juggling spreadsheets and calendars.</p>
+                    </div>
+
+                    <div class="case-solution">
+                        <h4>The Solution</h4>
+                        <ul>
+                            <li>Automated full-day jobs (115–360m²) to next available calendar slot</li>
+                            <li>Smart grouping of part-day jobs by postcode and area thresholds</li>
+                            <li>Alternating team assignment algorithm to balance workload</li>
+                            <li>Direct integration with Google Calendar for real-time updates</li>
+                        </ul>
+                    </div>
+
+                    <div class="results">
+                        <h4>Results</h4>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">2×</span>
+                                <span class="metric-label">Faster bookings</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-8hrs</span>
+                                <span class="metric-label">Admin time/week</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">0</span>
+                                <span class="metric-label">Double bookings</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">More jobs/week</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-badge">Google Sheets</span>
+                        <span class="tech-badge">Apps Script</span>
+                        <span class="tech-badge">Google Calendar API</span>
+                        <span class="tech-badge">Custom algorithms</span>
+                    </div>
+                </div>
+
+                <!-- Case Study 3: AI Email -->
+                <div class="case-study">
+                    <span class="case-tag">AI Communication</span>
+                    <h3>AI-Assisted Email Intake</h3>
+                    
+                    <div class="case-problem">
+                        <h4>The Challenge</h4>
+                        <p>Small businesses were drowning in email enquiries, spending hours manually responding to common questions about pricing, availability, and services—often during evenings and weekends.</p>
+                    </div>
+
+                    <div class="case-solution">
+                        <h4>The Solution</h4>
+                        <ul>
+                            <li>Built AI email responder that reads and understands customer enquiries</li>
+                            <li>Pulls real-time pricing and availability from internal systems</li>
+                            <li>Generates human-sounding, conversation-aware responses</li>
+                            <li>Configurable for different IMAP/SMTP email providers</li>
+                        </ul>
+                    </div>
+
+                    <div class="results">
+                        <h4>Results</h4>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">24/7</span>
+                                <span class="metric-label">Email support</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">80%</span>
+                                <span class="metric-label">Queries automated</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">&lt;5min</span>
+                                <span class="metric-label">Response time</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-badge">Node.js/TypeScript</span>
+                        <span class="tech-badge">Chatbase AI</span>
+                        <span class="tech-badge">Custom APIs</span>
+                        <span class="tech-badge">IMAP/SMTP</span>
+                    </div>
+                </div>
+
+                <!-- Case Study 4: Production Budget System -->
+                <div class="case-study">
+                    <span class="case-tag">Financial Systems</span>
+                    <h3>Production Budget Management System</h3>
+                    
+                    <div class="case-problem">
+                        <h4>The Challenge</h4>
+                        <p>Project-based businesses managing complex budgets across multiple cost centers struggled with disconnected spreadsheets, manual invoice generation, and no real-time budget vs actual tracking—leading to overruns and cash flow issues.</p>
+                    </div>
+
+                    <div class="case-solution">
+                        <h4>The Solution</h4>
+                        <ul>
+                            <li>Built comprehensive 12-tab Excel system integrating budgeting, invoicing, and financial tracking</li>
+                            <li>Automated document generation: pro-forma invoices, advance payments, purchase orders, expense invoices</li>
+                            <li>Created budget vs actual variance tracking across 18 cost categories with NIC calculations</li>
+                            <li>Implemented smart visibility controls to hide agency fees when presenting to clients</li>
+                            <li>Built-in currency converter for international projects and multi-currency budgeting</li>
+                        </ul>
+                    </div>
+
+                    <div class="results">
+                        <h4>Results</h4>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">12</span>
+                                <span class="metric-label">Integrated tabs</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">-15hrs</span>
+                                <span class="metric-label">Admin time/project</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">5+</span>
+                                <span class="metric-label">Document types generated</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Budget visibility</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-badge">Microsoft Excel</span>
+                        <span class="tech-badge">Advanced formulas</span>
+                        <span class="tech-badge">Conditional formatting</span>
+                        <span class="tech-badge">Multi-tab integration</span>
+                    </div>
+                </div>
+
+                <!-- Case Study 5: Quality Management System (was 6) -->
+                <div class="case-study">
+                    <span class="case-tag">Quality Management</span>
+                    <h3>Manufacturing Quality System</h3>
+                    
+                    <div class="case-problem">
+                        <h4>The Challenge</h4>
+                        <p>A manufacturing company needed to digitize their non-conformance reporting (NCR) and drawing revision request (DRR) processes. Manual paper-based systems caused delays in supplier communication, made it difficult to track recurring issues, and created no centralized archive for historical reference.</p>
+                    </div>
+
+                    <div class="case-solution">
+                        <h4>The Solution</h4>
+                        <ul>
+                            <li>Built custom AppSheet mobile application with comprehensive NCR submission forms</li>
+                            <li>Automated capture of machine number, part details (database dropdown), department at fault, supplier info, time lost, root cause analysis, preventive actions, and urgency levels</li>
+                            <li>Implemented automated PDF report generation in Google Drive ready for supplier communication</li>
+                            <li>Created smart auto-generated unique reference numbering system for easy tracking</li>
+                            <li>Designed visual dashboard showing statistics of most common fault sources (drawing office, machine shop, sub-contractors)</li>
+                            <li>Built separate drawing revision workflow with markup photo upload and automated PDF generation</li>
+                            <li>Organized searchable archives for resolved NCRs and completed DRRs</li>
+                            <li>Integrated with Google Sheets for centralized data management and reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="results">
+                        <h4>Results</h4>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Digital workflow</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3</span>
+                                <span class="metric-label">Report types automated</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">0</span>
+                                <span class="metric-label">Paper forms</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">80%</span>
+                                <span class="metric-label">Efficiency Increase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-badge">AppSheet</span>
+                        <span class="tech-badge">Google Sheets</span>
+                        <span class="tech-badge">Google Drive</span>
+                        <span class="tech-badge">PDF automation</span>
+                        <span class="tech-badge">Mobile apps</span>
+                    </div>
+                </div>
+
+                <!-- Case Study 6: Bus & Coach Quotation System (was 5) -->
+                <div class="case-study">
+                    <span class="case-tag">Sales Automation</span>
+                    <h3>Bus & Coach Quotation System</h3>
+                    
+                    <div class="case-problem">
+                        <h4>The Challenge</h4>
+                        <p>A bus and coach sales company with 11 sales staff relied on complex spreadsheets to generate quotes across 5 vehicle models with 10+ configurable options each. Manual calculations, no tracking, and paper-based approvals created bottlenecks and inconsistencies.</p>
+                    </div>
+
+                    <div class="case-solution">
+                        <h4>The Solution</h4>
+                        <ul>
+                            <li>Designed single intelligent quotation form handling all 5 vehicle models with conditional logic showing relevant options per model</li>
+                            <li>Built 3-stage workflow: Quotation Form → Purchase Order → Delivery Note with automated data pre-population between stages</li>
+                            <li>Integrated part exchange calculator, extended warranty options, and delivery charges into unified pricing engine</li>
+                            <li>Implemented electronic signature solution with automated approval workflow</li>
+                            <li>Created dual-output system: internal delivery notes (no pricing) and customer order confirmations</li>
+                        </ul>
+                    </div>
+
+                    <div class="results">
+                        <h4>Results</h4>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-value">-75%</span>
+                                <span class="metric-label">Quote generation time</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">3</span>
+                                <span class="metric-label">Automated workflow stages</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">0</span>
+                                <span class="metric-label">Manual data re-entry</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">£265</span>
+                                <span class="metric-label">Total project cost</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-badge">Jotform</span>
+                        <span class="tech-badge">Conditional logic</span>
+                        <span class="tech-badge">Workflow automation</span>
+                        <span class="tech-badge">E-signature integration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+           
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Automate Your Workflow?</h2>
+            <p>Let's discuss how AI-powered automation can transform your business operations</p>
+            <a href="contact.html" class="cta-button">Get a Quote</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GJL.IT. All rights reserved.</p>
+            <p>AI-Powered Workflow Automation Solutions</p>
+        </div>
+    </footer>
+</body>
+</html>
